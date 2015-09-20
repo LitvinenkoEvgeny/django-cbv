@@ -9,4 +9,5 @@ urlpatterns = patterns("",
                        url(r"^new$", views.BookCreate.as_view(), name="book_new"),
                        url(r"^edit/(?P<pk>\d+)$", views.BookUpdate.as_view(), name="book_edit"),
                        url(r"^delete/(?P<pk>\d+)$", views.BookDelete.as_view(), name="book_delete"),
+                       url(r"^detail/(?P<pk>\d+)$", views.BookDetail.as_view(), name="book_detail"),
                        )
